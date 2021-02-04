@@ -1,4 +1,6 @@
-public class AskYourHusband implements WashDishes {
+package com.test;
+
+public class HusbandWashingDishes implements WashDishes {
 
     @Override
     public void washDishes() {

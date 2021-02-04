@@ -1,4 +1,6 @@
-public class UseDishwasher implements WashDishes{
+package com.test;
+
+public class DishwasherWashingDishes implements WashDishes{
 
 
     @Override

@@ -1,3 +1,5 @@
+package com.test;
+
 public class Washer {
     private WashDishes washDishes;
 
