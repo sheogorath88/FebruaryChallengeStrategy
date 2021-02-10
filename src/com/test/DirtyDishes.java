@@ -23,4 +23,11 @@ public class DirtyDishes {
         System.out.println(this.name.getName() + " is made of " + this.stock.getStock() + " and ");
         washDishes.washDishes();
 }
+
+    @Override
+    public String toString() {
+        return this.name +
+                "is made of " + this.stock +
+                " and " + this.washDishes;
+    }
 }
