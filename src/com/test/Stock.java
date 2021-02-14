@@ -10,4 +10,9 @@ public class Stock {
     public String getStock() {
         return stock;
     }
+
+    @Override
+    public String toString() {
+        return stock;
+    }
 }
