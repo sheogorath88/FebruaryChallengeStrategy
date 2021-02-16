@@ -2,5 +2,5 @@ package com.test;
 
 public interface WashDishes {
 
-    public void washDishes();
+    void washDishes(DirtyDishes dirtyDishes);
 }
