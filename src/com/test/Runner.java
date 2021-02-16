@@ -48,13 +48,17 @@ public class Runner {
         List<DirtyDishes> dirtyDishes = new ArrayList<>();
         for (int i = 0; i < 16; i++){
             if ( i % 4 == 0) {
-              createDirtyDish(possibleCutleryNames, possibleStockNames, dirtyDishes);
+                DirtyDishes dish = createDirtyDish(possibleCutleryNames, possibleStockNames);
+                dirtyDishes.add(dish);
             } else if ( i % 4 == 1){
-              createDirtyDish(possiblePlatesNames, possibleStockNames, dirtyDishes);
+              DirtyDishes dish = createDirtyDish(possiblePlatesNames, possibleStockNames);
+              dirtyDishes.add(dish);
             } else if ( i % 4 == 2){
-              createDirtyDish(possibleGlassNames, possibleStockNames, dirtyDishes);
+              DirtyDishes dish = createDirtyDish(possibleGlassNames, possibleStockNames);
+              dirtyDishes.add(dish);
             } else {
-              createDirtyDish(possibleFoodContainerNames, possibleStockNames, dirtyDishes);
+              DirtyDishes dish = createDirtyDish(possibleFoodContainerNames, possibleStockNames);
+              dirtyDishes.add(dish);
             }
         }
 
@@ -99,19 +103,7 @@ public class Runner {
       }
     }
 
-  private static void createDirtyDish(
-      List<String> possibleCutleryNames,
-      List<String> possibleStockNames,
-      List<DirtyDishes> dirtyDishes
-  ) {
-    DirtyDishes dirtyDish = createDish(
-        possibleCutleryNames,
-        possibleStockNames
-    );
-    dirtyDishes.add(dirtyDish);
-  }
-
-  private static DirtyDishes createDish(
+  private static DirtyDishes createDirtyDish(
         List<String> possibleCutleryNames,
         List<String> possibleStockNames
     ) {
